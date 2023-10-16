@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        .container {
+            align-items: center;
+            padding: 200px 0 0 0;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <img src="/logogav.jpg" alt="logo">
+        <div class="container">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Login</label>
+                <input type="email" class="form-control" id="emailInput" placeholder="name@gmail.com">
+            </div>
+            <label for="inputPassword5" class="form-label">Palavra Chave</label>
+            <input type="password" id="senhaInput" class="form-control" aria-describedby="passwordHelpBlock">
+            <div id="passwordHelpBlock" class="form-text">
+                Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+            </div>
+            <h5 style="font-weight: bold; text-decoration: none;"><a href="cadastro.html">Não tenho cadastro</a></h5>
+        </div>
+    </center>
+
+    <script>
+        let = email, senha
+        function loginAcess() {
+            email = document.getElementById('emailInput').value
+            senha = document.getElementById('senhaInput').value
+
+            console.log('login feito com sucesso, no email:'+email)
+        }
+    </script>
+</body>
+</html>
